@@ -6,19 +6,25 @@
 /*   By: gfranco <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/04 17:50:43 by gfranco           #+#    #+#             */
-/*   Updated: 2018/04/04 17:55:19 by gfranco          ###   ########.fr       */
+/*   Updated: 2018/04/05 11:43:29 by gfranco          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void ft_print_numbers(void)
+void	ft_putchar(char g)
 {
-	write (1, "0123456789", 10);
+	write(1, &g, 1);
 }
 
-int		main(void)
+void ft_print_numbers(void)
 {
-	ft_print_numbers();
-	return(0);
+	int		g;
+	g = 48;
+	
+	while (g <= 57)
+	{
+		ft_putchar(g);
+		g = g + 1;
+	}
 }
