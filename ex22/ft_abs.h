@@ -6,8 +6,10 @@
 /*   By: gfranco <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/11 10:40:17 by gfranco           #+#    #+#             */
-/*   Updated: 2018/04/11 10:41:17 by gfranco          ###   ########.fr       */
+/*   Updated: 2018/04/11 11:30:09 by gfranco          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#define ABS(x) (((x) < 0) ? -(x) : (x))
+#ifndef FT_ABS_H
+# define FT_ABS_H
+# define ABS(Value) (Value < 0) ? (-Value) : (Value)
+#endif
