@@ -6,29 +6,11 @@
 /*   By: gfranco <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/10 12:56:48 by gfranco           #+#    #+#             */
-/*   Updated: 2018/04/11 09:54:07 by gfranco          ###   ########.fr       */
+/*   Updated: 2018/04/11 09:58:46 by gfranco          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
-#include <unistd.h>
-
-void	ft_putchar(char c)
-{
-	write (1, &c, 1);
-}
-
-void	ft_putstr(char *string)
-{
-	int		a;
-
-	a = 0;
-	while(string[a] != '\0')
-	{
-		ft_putchar(string[a]);
-		a++;
-	}
-}
 
 int		ft_strlen(char *str)
 {
